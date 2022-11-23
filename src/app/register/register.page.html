@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar-se</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-input type="text" placeholder="Nome" #input [(ngModel)]="nomeCompleto"></ion-input>
+    <ion-input type="text" placeholder="Usuário" #input></ion-input>
+    <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
+    <ion-input type="text" placeholder="CPF" [(ngModel)]="cpf"></ion-input>
+    <ion-input type="text" placeholder="Data de nascimento" [(ngModel)]="dataNascimento"></ion-input>
+    <ion-input type="password" placeholder="Senha" [(ngModel)]="senha"></ion-input>
+    <ion-input type="password" placeholder="Repita a Senha"></ion-input>
+    <ion-button expand="full" color="dark" routerLink="/home">Registrar</ion-button>
+    
+  </ion-grid> 
+</ion-content>

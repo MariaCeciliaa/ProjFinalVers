@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      iBeauty
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <img src="assets/img/logo.png" >
+    <ion-input type="email" placeholder="Email/Login" [(ngModel)]="login"></ion-input>
+    <ion-input type="password" placeholder="Senha" [(ngModel)]="senha"></ion-input>
+    <h1></h1>
+    <ion-checkbox></ion-checkbox>
+    <ion-label> Manter-se logado</ion-label>
+    <h5>{{erro}}</h5>
+    <ion-checkbox slot="end" ></ion-checkbox>
+    <ion-row>
+      <ion-col>
+          <ion-button expand="block" size="medium" color="light" (click)="logar()">Login</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" size="medium" color="light" routerLink="/register" routerDirection="root" >Cadastre-se</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
